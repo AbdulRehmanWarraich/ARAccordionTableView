@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ExpandableTitleView" id="iN0-l3-epB" userLabel="ExpandableTitleView" customClass="ExpandableTitleView" customModule="Bakcell_B2B" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2vU-jP-y15" userLabel="ContainerView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" fixedFrame="YES" text="How to get SIM?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0e-hY-bWO" customClass="MBLabel" customModule="Bakcell_B2B" customModuleProvider="target">
+                            <rect key="frame" x="16" y="4" width="248" height="36"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="labelType">
+                                    <integer key="value" value="3"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="labelTextColor">
+                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" image="plus_sign" translatesAutoresizingMaskIntoConstraints="NO" id="qcr-tt-k2r">
+                            <rect key="frame" x="268" y="6.5" width="32" height="32"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vsW-qy-fFC" userLabel="SepratorView" customClass="MBSeperatorView" customModule="Bakcell_B2B" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="43.5" width="320" height="1.5"/>
+                            <color key="backgroundColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1.5" id="bdH-tl-qGr"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="vsW-qy-fFC" firstAttribute="leading" secondItem="2vU-jP-y15" secondAttribute="leading" id="3CY-KL-2T3"/>
+                        <constraint firstItem="qcr-tt-k2r" firstAttribute="centerY" secondItem="2vU-jP-y15" secondAttribute="centerY" id="3wq-YM-kcb"/>
+                        <constraint firstAttribute="trailing" secondItem="vsW-qy-fFC" secondAttribute="trailing" id="9q4-C3-i2r"/>
+                        <constraint firstAttribute="bottom" secondItem="vsW-qy-fFC" secondAttribute="bottom" id="Coc-Jt-O6v"/>
+                        <constraint firstAttribute="trailing" secondItem="qcr-tt-k2r" secondAttribute="trailing" constant="20" id="ahQ-CU-XHg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2vU-jP-y15" secondAttribute="trailing" id="BH2-Vl-1Vi"/>
+                <constraint firstItem="2vU-jP-y15" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="e0f-Za-MTu"/>
+                <constraint firstAttribute="bottom" secondItem="2vU-jP-y15" secondAttribute="bottom" id="nXX-tN-OYm"/>
+                <constraint firstItem="2vU-jP-y15" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="sBo-3z-Zzu"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="indicatorImageView" destination="qcr-tt-k2r" id="qDN-zc-YBT"/>
+                <outlet property="lineView" destination="vsW-qy-fFC" id="zlt-qs-ula"/>
+                <outlet property="titleLabel" destination="e0e-hY-bWO" id="qgf-zg-z4D"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="plus_sign" width="32" height="32"/>
+    </resources>
+</document>
