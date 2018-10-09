@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ARAccordionTableView'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ARAccordionTableView.'
+  s.summary          = 'ARAccordionTableView transform regular UITableView into expandable TableView '
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,26 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+'ARAccordionTableView is transform regular UITableView into expandable TableView. This also provide number of configration to change behaviour accourding to your need.'
                        DESC
 
-  s.homepage         = 'https://github.com/ar.warraich@outlook.com/ARAccordionTableView'
+  s.homepage         = 'https://github.com/AbdulRehmanWarraich/ARAccordionTableView.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'ar.warraich@outlook.com' => 'abdul.rehman@evampsaanga.com' }
-  s.source           = { :git => 'https://github.com/ar.warraich@outlook.com/ARAccordionTableView.git', :tag => s.version.to_s }
+  s.author           = { 'AbdulRehman Warraich' => 'ar.warraich@outlook.com' }
+  s.source           = { :git => 'https://github.com/AbdulRehmanWarraich/ARAccordionTableView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'ARAccordionTableView/Classes/**/*'
+  s.swift_version = '4.2'
   
   # s.resource_bundles = {
   #   'ARAccordionTableView' => ['ARAccordionTableView/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
