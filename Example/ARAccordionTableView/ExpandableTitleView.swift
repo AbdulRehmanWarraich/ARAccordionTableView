@@ -1,21 +1,20 @@
 //
 //  ExpandableTitleView.swift
-//  Bakcell
+//  ARAccordionTableView
 //
-//  Created by AbdulRehman Warraich on 5/23/18.
-//  Copyright © 2018 evampsaanga. All rights reserved.
+//  Created by ar.warraich@outlook.com on 10/09/2018.
+//  Copyright (c) 2018 ar.warraich@outlook.com. All rights reserved.
 //
 
 import UIKit
 
-
-class ExpandableTitleView: MBAccordionTableViewHeaderView {
+import ARAccordionTableView
+class ExpandableTitleView: ARAccordionTableViewHeaderView {
     
     
     //MARK:- IBOutlets
     @IBOutlet var lineView: UIView!
-    @IBOutlet var indicatorImageView: UIImageView!
-    @IBOutlet var titleLabel: MBLabel!
+    @IBOutlet var titleLabel: UILabel!
     
     //MARK: - Functions
     
@@ -28,22 +27,6 @@ class ExpandableTitleView: MBAccordionTableViewHeaderView {
      */
     func setTileLabelText(_ text: String?) {
         titleLabel.text = text ?? ""
-    }
-    
-    /**
-     Sets expand image based on expanded status.
-     
-     - parameter isExpanded: Wheter expanded or not.
-     
-     - returns: void.
-     */
-    func setExpandStatus(_ isExpanded : Bool) {
-        
-        if isExpanded == true {
-            self.indicatorImageView.image  = UIImage.imageFor(name: "minus_sign")
-        } else {
-            self.indicatorImageView.image = UIImage.imageFor(name: "plus_sign")
-        }
     }
     
 }

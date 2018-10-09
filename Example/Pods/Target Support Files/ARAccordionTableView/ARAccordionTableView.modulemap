@@ -1,0 +1,6 @@
+framework module ARAccordionTableView {
+  umbrella header "ARAccordionTableView-umbrella.h"
+
+  export *
+  module * { export * }
+}

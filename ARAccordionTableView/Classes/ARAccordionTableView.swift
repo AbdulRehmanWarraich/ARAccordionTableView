@@ -9,14 +9,14 @@
 // MARK: - ARAccordionTableView
 // MARK: -
 
-class ARAccordionTableView: UITableView, ARAccordionTableViewHeaderViewDelegate {
+open class ARAccordionTableView: UITableView, ARAccordionTableViewHeaderViewDelegate {
     
     
     var delegateProxy: ARAccordionTableViewDelegateProxy?
-    weak var subclassDelegate: (UITableViewDelegate & MBAccordionTableViewDelegate)?
+    weak var subclassDelegate: (UITableViewDelegate & ARAccordionTableViewDelegate)?
     weak var subclassDataSource: UITableViewDataSource?
     var initialOpenSections :[Int] = []
-    var sectionInfos :[MBAccordionTableViewSectionInfo] = []
+    var sectionInfos :[ARAccordionTableViewSectionInfo] = []
     
     var allowMultipleSectionsOpen = false
     var keepOneSectionOpen = false
@@ -31,7 +31,7 @@ class ARAccordionTableView: UITableView, ARAccordionTableViewHeaderViewDelegate 
         initializeVars()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         initializeVars()
@@ -54,39 +54,39 @@ class ARAccordionTableView: UITableView, ARAccordionTableViewHeaderViewDelegate 
     }
     
     // MARK: - UITableView Overrides
-    override func beginUpdates() {
+    override open func beginUpdates() {
         self.isUserInteractionEnabled = false
         super.beginUpdates()
     }
     
-    override func endUpdates() {
+    override open func endUpdates() {
         super.endUpdates()
         self.isUserInteractionEnabled = true
     }
     
-    override var delegate: UITableViewDelegate? {
+    override open var delegate: UITableViewDelegate? {
         didSet {
-            self.subclassDelegate = delegate as? (MBAccordionTableViewDelegate & UITableViewDelegate)
+            self.subclassDelegate = delegate as? (ARAccordionTableViewDelegate & UITableViewDelegate)
             super.delegate = delegateProxy
         }
     }
-    override var dataSource: UITableViewDataSource? {
+    override open var dataSource: UITableViewDataSource? {
         didSet {
             subclassDataSource = self.dataSource
             super.dataSource = delegateProxy
         }
     }
     
-    override func insertSections(_ sections: IndexSet, with animation: UITableView.RowAnimation) {
+    override open func insertSections(_ sections: IndexSet, with animation: UITableView.RowAnimation) {
         
         sections.forEach { (section) in
-            let sectionInfo = MBAccordionTableViewSectionInfo(numberOfRows: 0)
+            let sectionInfo = ARAccordionTableViewSectionInfo(numberOfRows: 0)
             sectionInfos.insert(sectionInfo, at: section)
         }
         super.insertSections(sections, with: animation)
     }
     
-    override func deleteSections(_ sections: IndexSet, with animation: UITableView.RowAnimation) {
+    override open func deleteSections(_ sections: IndexSet, with animation: UITableView.RowAnimation) {
         // Remove section info in reverse order to prevent array from
         // removing the wrong section due to the stacking effect of arrays
         sections.forEach { (section) in
@@ -96,7 +96,7 @@ class ARAccordionTableView: UITableView, ARAccordionTableViewHeaderViewDelegate 
         super.deleteSections(sections, with: animation)
     }
     
-    override func insertRows(at indexPaths: [IndexPath], with animation: UITableView.RowAnimation) {
+    override open func insertRows(at indexPaths: [IndexPath], with animation: UITableView.RowAnimation) {
         #if DEBUG
         for indexPath: IndexPath in indexPaths {
             assert(isSectionOpen(indexPath.section), "Can't insert rows in a closed section: \(Int(indexPath.section)).")

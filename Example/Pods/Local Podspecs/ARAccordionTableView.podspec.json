@@ -1,0 +1,22 @@
+{
+  "name": "ARAccordionTableView",
+  "version": "0.1.0",
+  "summary": "A short description of ARAccordionTableView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ar.warraich@outlook.com/ARAccordionTableView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ar.warraich@outlook.com": "abdul.rehman@evampsaanga.com"
+  },
+  "source": {
+    "git": "https://github.com/ar.warraich@outlook.com/ARAccordionTableView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ARAccordionTableView/Classes/**/*"
+}

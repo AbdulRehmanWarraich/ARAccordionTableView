@@ -9,7 +9,7 @@
 // MARK: - ARAccordionTableViewDelegate
 // MARK: -
 
-protocol ARAccordionTableViewDelegate: NSObjectProtocol {
+public protocol ARAccordionTableViewDelegate: NSObjectProtocol {
     func tableView(_ tableView: ARAccordionTableView, canInteractWithHeaderAtSection section: Int) -> Bool
     
     func tableView(_ tableView: ARAccordionTableView, willOpenSection section: Int, withHeader header: UITableViewHeaderFooterView?)

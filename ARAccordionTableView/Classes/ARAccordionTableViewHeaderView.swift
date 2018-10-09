@@ -5,9 +5,9 @@
 //  Created by AbdulRehman Warraich on 10/9/18.
 //
 
-class ARAccordionTableViewHeaderView :UITableViewHeaderFooterView {
+open class ARAccordionTableViewHeaderView :UITableViewHeaderFooterView {
     
-    weak var delegate: MBAccordionTableViewHeaderViewDelegate?
+    weak var delegate: ARAccordionTableViewHeaderViewDelegate?
     
     override init(reuseIdentifier: String?) {
         super.init(reuseIdentifier: reuseIdentifier)
@@ -16,7 +16,7 @@ class ARAccordionTableViewHeaderView :UITableViewHeaderFooterView {
         
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         singleInit()

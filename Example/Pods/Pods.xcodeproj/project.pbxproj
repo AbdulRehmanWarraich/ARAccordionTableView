@@ -1,0 +1,778 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0043C890CFDE70B5DAAA08E2EEF81F5A /* Pods-ARAccordionTableView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DB6FBF0ED57D8440875590C39123A7F /* Pods-ARAccordionTableView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62C98A7038127034C3B290F9C952F22C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		85BA234AC55AC7B341BAC5C913050779 /* ARAccordionTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D844991A096FDD176962B7B8500091 /* ARAccordionTableView-dummy.m */; };
+		8C7C1341216CBF62005F25B2 /* ARAccordionTableViewHeaderViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C1340216CBF62005F25B2 /* ARAccordionTableViewHeaderViewDelegate.swift */; };
+		8C7C1343216CBFA3005F25B2 /* ARAccordionTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C1342216CBFA3005F25B2 /* ARAccordionTableViewHeaderView.swift */; };
+		8C7C1345216CC015005F25B2 /* ARAccordionTableViewDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C1344216CC015005F25B2 /* ARAccordionTableViewDelegateProxy.swift */; };
+		8C7C1347216CC077005F25B2 /* ARAccordionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C1346216CC077005F25B2 /* ARAccordionTableView.swift */; };
+		8C7C1349216CC09B005F25B2 /* ARAccordionTableViewSectionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C1348216CC09B005F25B2 /* ARAccordionTableViewSectionInfo.swift */; };
+		8C7C134D216CC21A005F25B2 /* ARAccordionTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7C134C216CC21A005F25B2 /* ARAccordionTableViewDelegate.swift */; };
+		A8D63489D10C9CE39163EABACB379094 /* Pods-ARAccordionTableView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6EFB04572D103203A64E201C6522A5 /* Pods-ARAccordionTableView_Example-dummy.m */; };
+		BEF4B011B6686EDE3E825507C9234B3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		DF746CB4AEC757E42262E7B5CF9A7B89 /* Pods-ARAccordionTableView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AD40EB5C8E0BD45483C44C57D9F62F8 /* Pods-ARAccordionTableView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2B602942DFFD4D1FB8AB5768266A84F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		ECACDF90611DE17DB5669E1EA693CF21 /* Pods-ARAccordionTableView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E99F1458E6BC4082250A092D1593E728 /* Pods-ARAccordionTableView_Tests-dummy.m */; };
+		FF84E43F8327314155E40A201406E8C9 /* ARAccordionTableView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A021A7546D9F2CD5304DEC14C5A57C84 /* ARAccordionTableView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		66F431C6C87158DE0E1662D07DB5C4EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5316B7919A9F8C6A2C8A56405ACE23D;
+			remoteInfo = "Pods-ARAccordionTableView_Example";
+		};
+		A92898804BD821F092C7C17B494A5B83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96BE164D7BA2EDF4401F717B6F76A7CE;
+			remoteInfo = ARAccordionTableView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08903D50B1CF9999BA1CA864FF2ADCEB /* Pods-ARAccordionTableView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ARAccordionTableView_Tests.modulemap"; sourceTree = "<group>"; };
+		0AD40EB5C8E0BD45483C44C57D9F62F8 /* Pods-ARAccordionTableView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ARAccordionTableView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		0C061AB89BC9A9C8C80FBB03B0B4828C /* Pods-ARAccordionTableView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ARAccordionTableView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		0CE6CC366B7EA066617D78315800F280 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D5E949EE20EE5FB2F92A75979FDA489 /* Pods-ARAccordionTableView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARAccordionTableView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		11DF87790248F0D2B80A66D103D79647 /* Pods-ARAccordionTableView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARAccordionTableView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		14C1CFA99C3186F279EAACDB4BD3AA61 /* ARAccordionTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ARAccordionTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1946AD79473CBE302960BA5620860E93 /* Pods-ARAccordionTableView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARAccordionTableView_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		30A6444771E6A8EBF555AE074D997B91 /* ARAccordionTableView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = ARAccordionTableView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3255B3BCE47EB4F841ED0314FEAFD5EF /* Pods-ARAccordionTableView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ARAccordionTableView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		37095E2A3F08A47C82502C32A3DC6E80 /* Pods_ARAccordionTableView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARAccordionTableView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C6D47FDCB373137D213958A0A3DBE36 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3DB6FBF0ED57D8440875590C39123A7F /* Pods-ARAccordionTableView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ARAccordionTableView_Example-umbrella.h"; sourceTree = "<group>"; };
+		3FAC5A109DF15CBD79C7A31AFBC73CE8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		489EEECBB723DF79CD056A6EC885398A /* Pods-ARAccordionTableView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARAccordionTableView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		4BD2D0B255D76EA3170A43817E108A33 /* Pods-ARAccordionTableView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ARAccordionTableView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4D6EFB04572D103203A64E201C6522A5 /* Pods-ARAccordionTableView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ARAccordionTableView_Example-dummy.m"; sourceTree = "<group>"; };
+		54CFD7BED631975CBEC283A4EC30DD1C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6C3F3E003CFBC84CD2EE9504269168D1 /* Pods-ARAccordionTableView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARAccordionTableView_Example-resources.sh"; sourceTree = "<group>"; };
+		7F3A251CB050BD23B67B2BF515C945E2 /* Pods-ARAccordionTableView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARAccordionTableView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		82686291526228FCFB7B470C76C42FCE /* Pods-ARAccordionTableView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ARAccordionTableView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		89D844991A096FDD176962B7B8500091 /* ARAccordionTableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ARAccordionTableView-dummy.m"; sourceTree = "<group>"; };
+		8C7C1340216CBF62005F25B2 /* ARAccordionTableViewHeaderViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ARAccordionTableViewHeaderViewDelegate.swift; path = ARAccordionTableView/Classes/ARAccordionTableViewHeaderViewDelegate.swift; sourceTree = "<group>"; };
+		8C7C1342216CBFA3005F25B2 /* ARAccordionTableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ARAccordionTableViewHeaderView.swift; path = ARAccordionTableView/Classes/ARAccordionTableViewHeaderView.swift; sourceTree = "<group>"; };
+		8C7C1344216CC015005F25B2 /* ARAccordionTableViewDelegateProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ARAccordionTableViewDelegateProxy.swift; path = ARAccordionTableView/Classes/ARAccordionTableViewDelegateProxy.swift; sourceTree = "<group>"; };
+		8C7C1346216CC077005F25B2 /* ARAccordionTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ARAccordionTableView.swift; path = ARAccordionTableView/Classes/ARAccordionTableView.swift; sourceTree = "<group>"; };
+		8C7C1348216CC09B005F25B2 /* ARAccordionTableViewSectionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ARAccordionTableViewSectionInfo.swift; path = ARAccordionTableView/Classes/ARAccordionTableViewSectionInfo.swift; sourceTree = "<group>"; };
+		8C7C134C216CC21A005F25B2 /* ARAccordionTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ARAccordionTableViewDelegate.swift; path = ARAccordionTableView/Classes/ARAccordionTableViewDelegate.swift; sourceTree = "<group>"; };
+		914E60D667779B4441BE0BB79FD5CE89 /* Pods_ARAccordionTableView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARAccordionTableView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A021A7546D9F2CD5304DEC14C5A57C84 /* ARAccordionTableView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARAccordionTableView-umbrella.h"; sourceTree = "<group>"; };
+		B05EB4B1FF268147BE9A186B90F3F6AD /* ARAccordionTableView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARAccordionTableView.xcconfig; sourceTree = "<group>"; };
+		C2A433C6072B650158571BA823838460 /* ARAccordionTableView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ARAccordionTableView.modulemap; sourceTree = "<group>"; };
+		C37627064CA0465ADC68F36E5819B27C /* ARAccordionTableView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARAccordionTableView-prefix.pch"; sourceTree = "<group>"; };
+		D8536B753BFBB717906ABFAAD552BACC /* Pods-ARAccordionTableView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ARAccordionTableView_Example.modulemap"; sourceTree = "<group>"; };
+		E029BD8AE2191892500DEBD54DCBB3C8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E69535B0A3A70F43A1E5690787A0406E /* Pods-ARAccordionTableView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ARAccordionTableView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E99F1458E6BC4082250A092D1593E728 /* Pods-ARAccordionTableView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ARAccordionTableView_Tests-dummy.m"; sourceTree = "<group>"; };
+		F597E07E3CD012629A64D9F67693B94D /* Pods-ARAccordionTableView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ARAccordionTableView_Tests-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E43AF91CCE85D3C2935F984771681D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF4B011B6686EDE3E825507C9234B3B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CECAE9449D955395A8F4B83B711DC89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2B602942DFFD4D1FB8AB5768266A84F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69846069779D475AC2739998611DC2A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62C98A7038127034C3B290F9C952F22C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13D9CA66E6437284296E39D60E481A34 /* Pods-ARAccordionTableView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3FAC5A109DF15CBD79C7A31AFBC73CE8 /* Info.plist */,
+				08903D50B1CF9999BA1CA864FF2ADCEB /* Pods-ARAccordionTableView_Tests.modulemap */,
+				3255B3BCE47EB4F841ED0314FEAFD5EF /* Pods-ARAccordionTableView_Tests-acknowledgements.markdown */,
+				4BD2D0B255D76EA3170A43817E108A33 /* Pods-ARAccordionTableView_Tests-acknowledgements.plist */,
+				E99F1458E6BC4082250A092D1593E728 /* Pods-ARAccordionTableView_Tests-dummy.m */,
+				1946AD79473CBE302960BA5620860E93 /* Pods-ARAccordionTableView_Tests-frameworks.sh */,
+				F597E07E3CD012629A64D9F67693B94D /* Pods-ARAccordionTableView_Tests-resources.sh */,
+				0AD40EB5C8E0BD45483C44C57D9F62F8 /* Pods-ARAccordionTableView_Tests-umbrella.h */,
+				82686291526228FCFB7B470C76C42FCE /* Pods-ARAccordionTableView_Tests.debug.xcconfig */,
+				489EEECBB723DF79CD056A6EC885398A /* Pods-ARAccordionTableView_Tests.release.xcconfig */,
+			);
+			name = "Pods-ARAccordionTableView_Tests";
+			path = "Target Support Files/Pods-ARAccordionTableView_Tests";
+			sourceTree = "<group>";
+		};
+		1A5AAD182C40FFB093DC80E870DE9A35 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8698D347ECF9C8B7F164E2C715700F1 /* Pods-ARAccordionTableView_Example */,
+				13D9CA66E6437284296E39D60E481A34 /* Pods-ARAccordionTableView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6A7AE1FBB611C99667EE393896DDB392 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9CBA4782694AAA810FEBB6FC88628E2 /* ARAccordionTableView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		6C7DD9ACC669B70B9110069B4A64EA71 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2A433C6072B650158571BA823838460 /* ARAccordionTableView.modulemap */,
+				B05EB4B1FF268147BE9A186B90F3F6AD /* ARAccordionTableView.xcconfig */,
+				89D844991A096FDD176962B7B8500091 /* ARAccordionTableView-dummy.m */,
+				C37627064CA0465ADC68F36E5819B27C /* ARAccordionTableView-prefix.pch */,
+				A021A7546D9F2CD5304DEC14C5A57C84 /* ARAccordionTableView-umbrella.h */,
+				E029BD8AE2191892500DEBD54DCBB3C8 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ARAccordionTableView";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				6A7AE1FBB611C99667EE393896DDB392 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				86C69821039F69C49503DBA48DD98577 /* Products */,
+				1A5AAD182C40FFB093DC80E870DE9A35 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		86C69821039F69C49503DBA48DD98577 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14C1CFA99C3186F279EAACDB4BD3AA61 /* ARAccordionTableView.framework */,
+				914E60D667779B4441BE0BB79FD5CE89 /* Pods_ARAccordionTableView_Example.framework */,
+				37095E2A3F08A47C82502C32A3DC6E80 /* Pods_ARAccordionTableView_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D8698D347ECF9C8B7F164E2C715700F1 /* Pods-ARAccordionTableView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				0CE6CC366B7EA066617D78315800F280 /* Info.plist */,
+				D8536B753BFBB717906ABFAAD552BACC /* Pods-ARAccordionTableView_Example.modulemap */,
+				E69535B0A3A70F43A1E5690787A0406E /* Pods-ARAccordionTableView_Example-acknowledgements.markdown */,
+				0C061AB89BC9A9C8C80FBB03B0B4828C /* Pods-ARAccordionTableView_Example-acknowledgements.plist */,
+				4D6EFB04572D103203A64E201C6522A5 /* Pods-ARAccordionTableView_Example-dummy.m */,
+				11DF87790248F0D2B80A66D103D79647 /* Pods-ARAccordionTableView_Example-frameworks.sh */,
+				6C3F3E003CFBC84CD2EE9504269168D1 /* Pods-ARAccordionTableView_Example-resources.sh */,
+				3DB6FBF0ED57D8440875590C39123A7F /* Pods-ARAccordionTableView_Example-umbrella.h */,
+				0D5E949EE20EE5FB2F92A75979FDA489 /* Pods-ARAccordionTableView_Example.debug.xcconfig */,
+				7F3A251CB050BD23B67B2BF515C945E2 /* Pods-ARAccordionTableView_Example.release.xcconfig */,
+			);
+			name = "Pods-ARAccordionTableView_Example";
+			path = "Target Support Files/Pods-ARAccordionTableView_Example";
+			sourceTree = "<group>";
+		};
+		E9CBA4782694AAA810FEBB6FC88628E2 /* ARAccordionTableView */ = {
+			isa = PBXGroup;
+			children = (
+				8C7C1346216CC077005F25B2 /* ARAccordionTableView.swift */,
+				8C7C1342216CBFA3005F25B2 /* ARAccordionTableViewHeaderView.swift */,
+				8C7C134C216CC21A005F25B2 /* ARAccordionTableViewDelegate.swift */,
+				8C7C1344216CC015005F25B2 /* ARAccordionTableViewDelegateProxy.swift */,
+				8C7C1340216CBF62005F25B2 /* ARAccordionTableViewHeaderViewDelegate.swift */,
+				8C7C1348216CC09B005F25B2 /* ARAccordionTableViewSectionInfo.swift */,
+				ED65CB929A7C2BCB165A7384F9BC4BE9 /* Pod */,
+				6C7DD9ACC669B70B9110069B4A64EA71 /* Support Files */,
+			);
+			name = ARAccordionTableView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		ED65CB929A7C2BCB165A7384F9BC4BE9 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				30A6444771E6A8EBF555AE074D997B91 /* ARAccordionTableView.podspec */,
+				3C6D47FDCB373137D213958A0A3DBE36 /* LICENSE */,
+				54CFD7BED631975CBEC283A4EC30DD1C /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CD84AA2BA654330E5FB1BB6F8A20E5BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF746CB4AEC757E42262E7B5CF9A7B89 /* Pods-ARAccordionTableView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E16F37D7FBD5BCFF133BA585CC5607 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF84E43F8327314155E40A201406E8C9 /* ARAccordionTableView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF3C26A31CD071D9BA26BE35EFA5A04D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0043C890CFDE70B5DAAA08E2EEF81F5A /* Pods-ARAccordionTableView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		116F1A0D4DF797260A2CDBD7D943F192 /* Pods-ARAccordionTableView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB1C01BF133C8BE4BC3D704C2650F725 /* Build configuration list for PBXNativeTarget "Pods-ARAccordionTableView_Tests" */;
+			buildPhases = (
+				765AEF9C1F1DCCAAA6AB5A5A5CC601BA /* Sources */,
+				69846069779D475AC2739998611DC2A2 /* Frameworks */,
+				CD84AA2BA654330E5FB1BB6F8A20E5BB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				057BF236C5904832E939851CE1E2E333 /* PBXTargetDependency */,
+			);
+			name = "Pods-ARAccordionTableView_Tests";
+			productName = "Pods-ARAccordionTableView_Tests";
+			productReference = 37095E2A3F08A47C82502C32A3DC6E80 /* Pods_ARAccordionTableView_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		96BE164D7BA2EDF4401F717B6F76A7CE /* ARAccordionTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45133277F3186DBBEBD06D3A444AE5D5 /* Build configuration list for PBXNativeTarget "ARAccordionTableView" */;
+			buildPhases = (
+				E70B7FA4B13CF11190D52CEE1B79E8D5 /* Sources */,
+				1E43AF91CCE85D3C2935F984771681D7 /* Frameworks */,
+				D0E16F37D7FBD5BCFF133BA585CC5607 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARAccordionTableView;
+			productName = ARAccordionTableView;
+			productReference = 14C1CFA99C3186F279EAACDB4BD3AA61 /* ARAccordionTableView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E5316B7919A9F8C6A2C8A56405ACE23D /* Pods-ARAccordionTableView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAA990B6A44669CBD4BE1931002325F8 /* Build configuration list for PBXNativeTarget "Pods-ARAccordionTableView_Example" */;
+			buildPhases = (
+				97F25D452049BF0D2F25D309B3D5BBAC /* Sources */,
+				4CECAE9449D955395A8F4B83B711DC89 /* Frameworks */,
+				DF3C26A31CD071D9BA26BE35EFA5A04D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				883C0CBC2AE4D165D0A1B332B3750642 /* PBXTargetDependency */,
+			);
+			name = "Pods-ARAccordionTableView_Example";
+			productName = "Pods-ARAccordionTableView_Example";
+			productReference = 914E60D667779B4441BE0BB79FD5CE89 /* Pods_ARAccordionTableView_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 1000;
+				TargetAttributes = {
+					96BE164D7BA2EDF4401F717B6F76A7CE = {
+						LastSwiftMigration = 1000;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 86C69821039F69C49503DBA48DD98577 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96BE164D7BA2EDF4401F717B6F76A7CE /* ARAccordionTableView */,
+				E5316B7919A9F8C6A2C8A56405ACE23D /* Pods-ARAccordionTableView_Example */,
+				116F1A0D4DF797260A2CDBD7D943F192 /* Pods-ARAccordionTableView_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		765AEF9C1F1DCCAAA6AB5A5A5CC601BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECACDF90611DE17DB5669E1EA693CF21 /* Pods-ARAccordionTableView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97F25D452049BF0D2F25D309B3D5BBAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8D63489D10C9CE39163EABACB379094 /* Pods-ARAccordionTableView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E70B7FA4B13CF11190D52CEE1B79E8D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C7C1343216CBFA3005F25B2 /* ARAccordionTableViewHeaderView.swift in Sources */,
+				8C7C1341216CBF62005F25B2 /* ARAccordionTableViewHeaderViewDelegate.swift in Sources */,
+				85BA234AC55AC7B341BAC5C913050779 /* ARAccordionTableView-dummy.m in Sources */,
+				8C7C134D216CC21A005F25B2 /* ARAccordionTableViewDelegate.swift in Sources */,
+				8C7C1349216CC09B005F25B2 /* ARAccordionTableViewSectionInfo.swift in Sources */,
+				8C7C1345216CC015005F25B2 /* ARAccordionTableViewDelegateProxy.swift in Sources */,
+				8C7C1347216CC077005F25B2 /* ARAccordionTableView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		057BF236C5904832E939851CE1E2E333 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-ARAccordionTableView_Example";
+			target = E5316B7919A9F8C6A2C8A56405ACE23D /* Pods-ARAccordionTableView_Example */;
+			targetProxy = 66F431C6C87158DE0E1662D07DB5C4EB /* PBXContainerItemProxy */;
+		};
+		883C0CBC2AE4D165D0A1B332B3750642 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ARAccordionTableView;
+			target = 96BE164D7BA2EDF4401F717B6F76A7CE /* ARAccordionTableView */;
+			targetProxy = A92898804BD821F092C7C17B494A5B83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		32FD568816AAD24E066E10631C9FA9C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 489EEECBB723DF79CD056A6EC885398A /* Pods-ARAccordionTableView_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ARAccordionTableView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ARAccordionTableView_Tests/Pods-ARAccordionTableView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		47FBDDD33E7A4DF2615D387ABA78BB51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B05EB4B1FF268147BE9A186B90F3F6AD /* ARAccordionTableView.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ARAccordionTableView/ARAccordionTableView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ARAccordionTableView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ARAccordionTableView/ARAccordionTableView.modulemap";
+				PRODUCT_MODULE_NAME = ARAccordionTableView;
+				PRODUCT_NAME = ARAccordionTableView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6373BE5C9B94E86B5898EB79A337E668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F3A251CB050BD23B67B2BF515C945E2 /* Pods-ARAccordionTableView_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ARAccordionTableView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ARAccordionTableView_Example/Pods-ARAccordionTableView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6643E6A6280B5C46A1C98747C88A167B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B05EB4B1FF268147BE9A186B90F3F6AD /* ARAccordionTableView.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ARAccordionTableView/ARAccordionTableView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ARAccordionTableView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ARAccordionTableView/ARAccordionTableView.modulemap";
+				PRODUCT_MODULE_NAME = ARAccordionTableView;
+				PRODUCT_NAME = ARAccordionTableView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B42B54097A876E8A982CBF5DAA91B1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C09C0319472A2103CDB208A13B4F31C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82686291526228FCFB7B470C76C42FCE /* Pods-ARAccordionTableView_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ARAccordionTableView_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ARAccordionTableView_Tests/Pods-ARAccordionTableView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F8610EC3B43ECD17E54A5A9B4969AF99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D5E949EE20EE5FB2F92A75979FDA489 /* Pods-ARAccordionTableView_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ARAccordionTableView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ARAccordionTableView_Example/Pods-ARAccordionTableView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */,
+				B42B54097A876E8A982CBF5DAA91B1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45133277F3186DBBEBD06D3A444AE5D5 /* Build configuration list for PBXNativeTarget "ARAccordionTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6643E6A6280B5C46A1C98747C88A167B /* Debug */,
+				47FBDDD33E7A4DF2615D387ABA78BB51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAA990B6A44669CBD4BE1931002325F8 /* Build configuration list for PBXNativeTarget "Pods-ARAccordionTableView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8610EC3B43ECD17E54A5A9B4969AF99 /* Debug */,
+				6373BE5C9B94E86B5898EB79A337E668 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB1C01BF133C8BE4BC3D704C2650F725 /* Build configuration list for PBXNativeTarget "Pods-ARAccordionTableView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C09C0319472A2103CDB208A13B4F31C4 /* Debug */,
+				32FD568816AAD24E066E10631C9FA9C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

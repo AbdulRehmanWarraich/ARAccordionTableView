@@ -1,0 +1,16 @@
+PODS:
+  - ARAccordionTableView (0.1.0)
+
+DEPENDENCIES:
+  - ARAccordionTableView (from `../`)
+
+EXTERNAL SOURCES:
+  ARAccordionTableView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ARAccordionTableView: fce160a696436f84f3eccc8b08a7d0320d39fd07
+
+PODFILE CHECKSUM: f9cfcba0e7d3a5108712ac90e60c10b1aab5bb0b
+
+COCOAPODS: 1.5.0
