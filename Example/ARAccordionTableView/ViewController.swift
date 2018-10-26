@@ -18,13 +18,15 @@ class ViewController: UIViewController {
         
         myTableView.delegate = self
         myTableView.dataSource = self
+        myTableView.allowMultipleSectionsOpen = true
+        myTableView.initialOpenSections = [1,10]
+        myTableView.toggleSection(1)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func closeSectionsAction(_ sender: UIButton) {
+        myTableView.closeAllSections()
     }
-
+    
 }
 
 extension ViewController : UITableViewDelegate, UITableViewDataSource {
@@ -70,75 +72,35 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
 extension ViewController : ARAccordionTableViewDelegate {
     
     func tableView(_ tableView: ARAccordionTableView, canInteractWithHeaderAtSection section: Int) -> Bool {
-        //Return weather user can interract with headerView
+        //Return whether user can interact with header View
         return true
     }
     
     func tableView(_ tableView: ARAccordionTableView, willOpenSection section: Int, withHeader header: UITableViewHeaderFooterView?) {
         
-        // called before seccion opening
+        // called before section is opening
     }
     
     func tableView(_ tableView: ARAccordionTableView, didOpenSection section: Int, withHeader header: UITableViewHeaderFooterView?) {
-        // called after seccion opened
+        // called after section opened
     }
     
     func tableView(_ tableView: ARAccordionTableView, willCloseSection section: Int, withHeader header: UITableViewHeaderFooterView?) {
-        // called before seccion closes
+        // called before section closes
     }
     
     func tableView(_ tableView: ARAccordionTableView, didCloseSection section: Int, withHeader header: UITableViewHeaderFooterView?) {
-        // called after seccion closed
+        // called after section closed
     }
     
     func tableView(_ tableView: ARAccordionTableView, didLogPressedSection section: Int, withHeader header: UITableViewHeaderFooterView?, longPressGestureState state: UIGestureRecognizer.State) {
        
         // called when user long press on a tableView header
     }
-    
-    
 }
 
 
-
-
 extension UITableView {
-    
-    ///Hides Default Sperator of UITableView
-    func hideDefaultSeprator() {
-        self.separatorColor = UIColor.clear
-        self.separatorStyle = .none
-    }
-    
-    ///Scrools to First row of UITableView
-    func scrollToFirstRow() {
-        let indexPath = IndexPath(row: 0, section: 0)
-        scrollToIndexPath(indexPath)
-    }
-    
-    /**
-     Scrools to specific index of UITableView.
-     
-     - parameter indexPath: Index on whic you want to scrool.
-     
-     - returns: void.
-     */
-    func scrollToIndexPath(_ indexPath : IndexPath) {
-        if self.hasRow(at: indexPath) {
-            self.scrollToRow(at: indexPath, at: .top, animated: true)
-        }
-    }
-    
-    /**
-     Check wheter UITableView has a row at specif index.
-     
-     - parameter at indexPath: Index on whic you want to check.
-     
-     - returns: Bool.
-     */
-    func hasRow(at indexPath: IndexPath) -> Bool {
-        return indexPath.section < self.numberOfSections && indexPath.row < self.numberOfRows(inSection: indexPath.section)
-    }
     
     ///Deque cell of a UITableView
     func dequeueReusableCell<T: UITableViewCell>() -> T? {
@@ -233,62 +195,6 @@ extension UITableView {
         }
     }
     
-    /**
-     Retruns index set of all visible sections.
-     
-     - returns: IndexSet.
-     */
-    func visibleSection() -> IndexSet {
-        
-        var indexSet: IndexSet = IndexSet()
-        let visibleRect: CGRect = self.bounds
-        
-        for sectionIndex in 0..<self.numberOfSections {
-            
-            let sectionBounds = self.rect(forSection: sectionIndex)
-            
-            if sectionBounds.intersects(visibleRect) {
-                
-                indexSet.insert(sectionIndex)
-            }
-        }
-        return indexSet
-    }
-    
-    /**
-     Retruns Last visible section number.
-     
-     - returns: Int.
-     */
-    func lastVisibleSection() -> Int {
-        
-        let visibleIndexSet = self.visibleSection()
-        
-        if let lastSection = visibleIndexSet.last {
-            
-            return lastSection + 1
-            
-        } else {
-            return 0
-        }
-    }
-    
-    /**
-     Retruns Last visible row number.
-     
-     - returns: Int.
-     */
-    func lastVisibleRow() -> Int {
-        
-        if let lastvisibleCell = self.visibleCells.last {
-            
-            if let lastvisibleCellIndexPath = self.indexPath(for: lastvisibleCell) {
-                
-                return lastvisibleCellIndexPath.row + 1
-            }
-            
-        }
-        return 0
-    }
+   
     
 }

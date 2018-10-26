@@ -12,16 +12,16 @@
 open class ARAccordionTableView: UITableView, ARAccordionTableViewHeaderViewDelegate {
     
     
-    var delegateProxy: ARAccordionTableViewDelegateProxy?
+    private var delegateProxy: ARAccordionTableViewDelegateProxy?
     weak var subclassDelegate: (UITableViewDelegate & ARAccordionTableViewDelegate)?
     weak var subclassDataSource: UITableViewDataSource?
-    var initialOpenSections :[Int] = []
     var sectionInfos :[ARAccordionTableViewSectionInfo] = []
     
-    var allowMultipleSectionsOpen = false
-    var keepOneSectionOpen = false
-    var numberOfSectionsCalled = false
-    var enableAnimationFix = false
+    public var initialOpenSections :[Int] = []
+    public var allowMultipleSectionsOpen = false
+    public var keepOneSectionOpen = false
+    public var numberOfSectionsCalled = false
+    public var enableAnimationFix = false
     
     
     // MARK: - Initialization
@@ -37,7 +37,7 @@ open class ARAccordionTableView: UITableView, ARAccordionTableViewHeaderViewDele
         initializeVars()
     }
     
-    func initializeVars() {
+    private func initializeVars() {
         sectionInfos = []
         numberOfSectionsCalled = false
         allowMultipleSectionsOpen = false
@@ -48,7 +48,7 @@ open class ARAccordionTableView: UITableView, ARAccordionTableViewHeaderViewDele
     
     
     // MARK: - Override Setters
-    func setInitialOpenSections(_ initialOpenedSections: [Int]) {
+    public func setInitialOpenSections(_ initialOpenedSections: [Int]) {
         assert(sectionInfos.count == 0, "'initialOpenedSections' MUST be set before the tableView has started loading data.")
         initialOpenSections = initialOpenedSections
     }
@@ -107,7 +107,7 @@ open class ARAccordionTableView: UITableView, ARAccordionTableViewHeaderViewDele
     
     
     // MARK: - Public Helper Methods
-    func isSectionOpen(_ section: Int) -> Bool {
+    public func isSectionOpen(_ section: Int) -> Bool {
         if sectionInfos.count > section {
             return sectionInfos[section].isOpen
         } else {
@@ -115,18 +115,18 @@ open class ARAccordionTableView: UITableView, ARAccordionTableViewHeaderViewDele
         }
     }
     
-    func toggleSection(_ section: Int) {
+    public func toggleSection(_ section: Int) {
         let headerView = self.headerView(forSection: section) as? ARAccordionTableViewHeaderView
         toggleSection(section, withHeaderView: headerView)
         
     }
     
-    func toggleSection(withOutCallingDelegates section: Int) {
+    public func toggleSection(withOutCallingDelegates section: Int) {
         let headerView = self.headerView(forSection: section) as? ARAccordionTableViewHeaderView
         toggleSection(section, withHeaderView: headerView, shouldCallDelegate: false)
     }
     
-    func section(forHeaderView headerView: UITableViewHeaderFooterView) -> Int {
+    public func section(forHeaderView headerView: UITableViewHeaderFooterView) -> Int {
         var section : Int = 0
         var minSection: Int = 0
         var maxSection: Int = numberOfSections - 1
@@ -315,7 +315,7 @@ open class ARAccordionTableView: UITableView, ARAccordionTableViewHeaderViewDele
     }
     
     
-    func closeAllSections(shouldCallDelegate: Bool = true) {
+    public func closeAllSections(shouldCallDelegate: Bool = true) {
         /* Get all of the sections that we need to close */
         var sectionsToClose :[Int] = []
         
@@ -346,7 +346,7 @@ open class ARAccordionTableView: UITableView, ARAccordionTableViewHeaderViewDele
     }
     
     
-    func closeSection(_ section: Int, withHeaderView sectionHeaderView: ARAccordionTableViewHeaderView?, shouldCallDelegate: Bool) {
+    public func closeSection(_ section: Int, withHeaderView sectionHeaderView: ARAccordionTableViewHeaderView?, shouldCallDelegate: Bool) {
         closeSection(section, withHeaderView: sectionHeaderView, rowAnimation: .top, shouldCallDelegate: shouldCallDelegate )
     }
     
@@ -379,7 +379,6 @@ open class ARAccordionTableView: UITableView, ARAccordionTableViewHeaderViewDele
         deleteRows(at: indexPathsToModify, with: .top)
         endUpdates()
     }
-    
-    
+ 
 }
 
