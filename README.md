@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/ARAccordionTableView.svg?style=flat)](https://cocoapods.org/pods/ARAccordionTableView)
 
 ## Example
-![](images/OneSection) ![](images/MultipleSections)
+![](images/OneSection.mp4) ![](images/MultipleSections.mp4)
 ## Requirements
 
 - iOS 9.0
