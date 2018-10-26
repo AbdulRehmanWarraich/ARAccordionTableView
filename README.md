@@ -36,7 +36,7 @@ You can use  `ARAccordionTableView` in simple three easy steps.
 3. Subclass your `UITableViewHeaderFooterView` with `ARAccordionTableViewHeaderView`
 
 
-### Diffrent Configration:
+### Different Configuration:
 1. Open one section at any time, to achive this set following property like below.
 ```swift
 tableView.allowMultipleSectionsOpen = false
