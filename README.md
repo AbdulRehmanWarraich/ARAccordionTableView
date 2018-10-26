@@ -7,6 +7,7 @@
 
 ## Example
 ![](gifs/first.gif) ![](gifs/second.gif)
+
 ## Requirements
 
 - iOS 9.0
