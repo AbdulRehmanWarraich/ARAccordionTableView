@@ -19,8 +19,8 @@ class ViewController: UIViewController {
         myTableView.delegate = self
         myTableView.dataSource = self
         myTableView.allowMultipleSectionsOpen = true
-        myTableView.initialOpenSections = [1,10]
-        myTableView.toggleSection(1)
+        myTableView.initialOpenSections = [0] // If need tot open multiple section [0,1,3]
+        
     }
 
     @IBAction func closeSectionsAction(_ sender: UIButton) {

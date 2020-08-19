@@ -59,7 +59,7 @@ class ARAccordionTableViewDelegateProxy : NSObject, UITableViewDataSource, UITab
                 /* Account for any initial open sections */
                 if (accordionTableView?.initialOpenSections.count ?? 0) > 0 && (accordionTableView?.initialOpenSections.contains(i) ?? false) {
                     section.isOpen = true
-                    if let indexToRemove = accordionTableView?.initialOpenSections.index(of: i) {
+                    if let indexToRemove = accordionTableView?.initialOpenSections.firstIndex(of: i) {
                         accordionTableView?.initialOpenSections.remove(at: indexToRemove)
                     }
                     

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ARAccordionTableView'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'ARAccordionTableView transform regular UITableView into expandable TableView '
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'ARAccordionTableView/Classes/**/*'
-  s.swift_version = '4.2'
+  s.swift_version = '5'
   
   # s.resource_bundles = {
   #   'ARAccordionTableView' => ['ARAccordionTableView/Assets/*.png']
